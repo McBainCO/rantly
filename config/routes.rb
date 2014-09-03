@@ -53,8 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root "user#homepage"
-  resource :user
+  root "users#homepage"
+  resource :users
 
 
 end
