@@ -13,43 +13,43 @@
  *= require_tree .
  *= require_self
  */
-.navbar {
-    height: 10%;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    margin-top: -10px;
-    padding-bottom: 10px;
-}
+/*.navbar {*/
+    /*height: 10%;*/
+    /*width: 100%;*/
+    /*background-color: black;*/
+    /*position: fixed;*/
+    /*margin-top: -10px;*/
+    /*padding-bottom: 10px;*/
+/*}*/
 
-.nav_logo {
-    float: left;
-    font-size: 30px;
-    color: white;
-    padding-left: 10%;
-    margin-top: 25px;
-}
+/*.nav_logo {*/
+    /*float: left;*/
+    /*font-size: 30px;*/
+    /*color: white;*/
+    /*padding-left: 10%;*/
+    /*margin-top: 25px;*/
+/*}*/
 
-.join {
-    float: right;
-    font-size: 25px;
-    color: black;
-    margin-right: 10%;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    border: 2px solid white;
-    background-color: greenyellow;
-    padding: 5px 20px 5px 20px;
-}
+/*.join {*/
+    /*float: right;*/
+    /*font-size: 25px;*/
+    /*color: black;*/
+    /*margin-right: 10%;*/
+    /*margin-bottom: 15px;*/
+    /*margin-top: 20px;*/
+    /*border: 2px solid white;*/
+    /*background-color: greenyellow;*/
+    /*padding: 5px 20px 5px 20px;*/
+/*}*/
 
 
-.login {
-    float: right;
-    font-size: 25px;
-    color: white;
-    margin-right: 5%;
+/*.login {*/
+    /*float: right;*/
+    /*font-size: 25px;*/
+    /*color: white;*/
+    /*margin-right: 5%;*/
 
     /*position: relative;*/
-}
+/*}*/
 
 
