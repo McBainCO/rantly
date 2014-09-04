@@ -6,14 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<div class="navbar">
-      <div class="nav_logo">
-        Rant.ly
-      </div>
-  <p class="join"><%= link_to "Join", new_users_path %></p>
-  <p class="login">Login</p>
+<header class="clearfix">
+<h1>Rant.ly</h1>
+<nav class="navbar">
 
-</div>
+  Login
+<%= link_to "Join", new_users_path %>
+
+
+</nav>
+</header>
 <body>
 
 <%= yield %>

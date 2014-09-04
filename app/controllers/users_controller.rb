@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(allowed_params)
     if
       @user.save
+
       flash[:notice] = "Your have registered Successfuly"
       redirect_to root_path
     end
