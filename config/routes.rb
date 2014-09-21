@@ -54,7 +54,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root "users#homepage"
-  resource :users
+  resources :users
+  resources :sessions
+
 
 
 end

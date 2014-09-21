@@ -1,0 +1,24 @@
+<%= form_for @user do |f| %>
+  <ul style="list-style-type: none;">
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </li>
+    <li>
+      <%= f.label :password %>
+      <%= f.password_field :password_digest %>
+    </li>
+    <%= f.submit "Sign in" %>
+  </ul>
+
+<% end %>
+
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
