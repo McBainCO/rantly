@@ -10,10 +10,13 @@
 <h1>Rant.ly</h1>
 <nav class="navbar">
 
-
-<%= link_to  "Login", new_session_path %>
-<%= link_to "Join", new_user_path %>
-<%= link_to "logout", session_path(:id) %>
+  <% if signed_in? %>
+    <%= current_user.username %>
+    <%= link_to 'Sign out', session_path, method: :delete %>
+  <% else %>
+    <%= link_to 'Sign in', new_session_path %>
+    <%= link_to 'Sign up', new_user_path %>
+  <% end %>
 </nav>
 </header>
 <body>
