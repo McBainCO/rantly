@@ -53,9 +53,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root "users#homepage"
+  root "users#hompage"
   resources :users
-  resources :sessions
+  resources :sessions, :only => [:new, :edit, :destroy, :create]
+
+
 
 
 

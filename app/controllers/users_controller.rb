@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
 
-  def index
+  def idex
     @users = User.all
   end
 
   def new
     @user = User.new
   end
+
 
   def create
     @user = User.new(allowed_params)
@@ -19,13 +20,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def homepage
+
+  end
+
 
 end
 
   private
 
   def allowed_params
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:name, :email, :password_digest)
 
 
   end
