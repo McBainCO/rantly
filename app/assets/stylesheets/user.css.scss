@@ -8,13 +8,15 @@
   width: 100%;
   background-color: whitesmoke;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 5%;
   margin-bottom: 0px;
 }
 
 .hero_text {
   margin-bottom: 150px;
   margin-top: -100px;
+  text-align: center;
+
 }
 
 .reg_form {
@@ -28,16 +30,25 @@
   width: 100%;
   background-color: gray;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 5%;
+  float: left;
+  overflow: auto;
 //  margin-left: -10px;
 
 }
 
+.bottom_hero_img {
+  float: left;
+  display: inline;
+  margin-top: -7%;
+}
+
 .bottom_hero_text {
   margin-bottom: 150px;
-  margin-top: -250px;
-  margin-left: 34%;
+  margin-top: 4%;
   color: white;
-  text-align: inline-block;
+  float: left;
+  text-align: center;
   width: 550px;
+
 }
