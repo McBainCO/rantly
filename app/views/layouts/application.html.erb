@@ -10,11 +10,11 @@
 <h1>Rant.ly</h1>
 <nav class="navbar">
 
-  <% if @current_user %>
+  <% if current_user  %>
     <%= link_to 'Logout', session_path %>
    <% else  %>
     <%= link_to 'Login', new_session_path %>
-    <%= link_to 'Sign up', new_user_path %>
+    <%= link_to 'Join', new_user_path %>
    <% end %>
 
 </nav>
