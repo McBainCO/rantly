@@ -21,6 +21,7 @@ class UsersController < ApplicationController
   end
 
   def homepage
+    # @user = User.find_by(:email)
 
   end
 

@@ -1,18 +1,14 @@
-<%= form_for @user do |f| %>
+<%= form_tag "/sessions" do %>
   <ul style="list-style-type: none;">
     <li>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= label_tag :email %>
+      <%= email_field_tag :email %>
     </li>
     <li>
-      <%= f.label :email %>
-      <%= f.email_field :email %>
+      <%= label_tag :password %>
+      <%= password_field_tag :password_digest %>
     </li>
-    <li>
-      <%= f.label :password %>
-      <%= f.password_field :password_digest %>
-    </li>
-    <%= f.submit "Sign in" %>
+    <%= submit_tag "Sign in" %>
   </ul>
 
 <% end %>
