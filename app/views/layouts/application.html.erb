@@ -2,22 +2,29 @@
 <html>
 <head>
   <title>Rantly</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <header class="clearfix">
-<h1>Rant.ly</h1>
-<nav class="navbar">
+  <h1>Rant.ly</h1>
 
-  <% if current_user  %>
-    <%= link_to 'Logout', session_path %>
-   <% else  %>
-    <%= link_to 'Login', new_session_path %>
-  <p id="join"> <%= link_to 'Join', new_user_path %> </p>
-<% end %>
+  </div>
+  <nav class="navbar">
 
-</nav>
+
+    <% if current_user %>
+      <%= link_to 'Logout', session_path %>
+    <% else %>
+      <div class="header-links">
+
+      <%= link_to 'Login', new_session_path %>
+      <%= link_to 'Join', new_user_path, id: "join" %>
+      </div>
+    <% end %>
+
+
+  </nav>
 </header>
 <body>
 <%= flash[:notice] %>
@@ -26,3 +33,4 @@
 
 </body>
 </html>
+

@@ -15,6 +15,6 @@ group :development, :test, :production do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rails_12factor'
-
+  gem 'bcrypt'
 end
 
