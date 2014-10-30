@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   root "users#homepage"
   resources :users
   resources :sessions, :only => [:new, :edit, :destroy, :create]
-
+  resources :rants
 
 
 
