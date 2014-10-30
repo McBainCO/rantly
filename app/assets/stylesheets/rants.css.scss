@@ -5,5 +5,24 @@
 .rant_panel {
   width: 25%;
   background-color: white;
-  height: 99%;
+  height: 1000px;
+  position: absolute;
+}
+
+
+.login_form {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 2% 0% 2% 0%;
+  position: relative;
+}
+
+.form_field {
+  width: 90%;
+}
+
+.register_button {
+  width: 90%;
 }
