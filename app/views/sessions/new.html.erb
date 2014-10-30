@@ -1,20 +1,30 @@
-<%= form_tag "/sessions" do %>
-  <ul style="list-style-type: none;">
-    <li>
-      <%= label_tag :email %>
-      <%= email_field_tag :email %>
-    </li>
-    <li>
-      <%= label_tag :password %>
-      <%= password_field_tag :password_digest %>
-    </li>
-    <%= submit_tag "Sign in" %>
-  </ul>
+<div class="bottom_hero">
+  <div class="login_form">
+    <%= form_tag "/sessions" do %>
+      <ul style="list-style-type: none;">
+        <li class="form_field">
+          <%= label_tag :email %>
+          <br/>
+          <%= email_field_tag :email %>
+        </li>
+        <li class="form_field">
+          <%= label_tag :password %>
+          <br/>
+          <%= password_field_tag :password_digest %>
+        </li>
+        <li class="register_button">
+          <%= submit_tag "Sign in" %>
+        </li>
+      </ul>
 
-<% end %>
 
-<% if @user.errors.any? %>
-  <% @user.errors.full_messages.each do |error| %>
-    <p><%= error %></p>
-  <% end %>
-<% end %>
+    <% end %>
+
+    <% if @user.errors.any? %>
+      <% @user.errors.full_messages.each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

@@ -1,23 +1,28 @@
 <div class="bottom_hero">
-Register for Rantly!
+  <div class="login_form">
+    Register for Rantly!
 
-<%= form_for @user do |f| %>
-<ul style="list-style-type: none;">
-  <li>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </li>
-  <li>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </li>
-  <li>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </li>
-  <li>
-     <%= f.submit "Register" %>
-  </li>
-</ul>
-<% end %>
+    <%= form_for @user do |f| %>
+      <ul style="list-style-type: none;">
+        <li class="form_field">
+          <%= f.label :name %>
+          <br/>
+          <%= f.text_field :name %>
+        </li>
+        <li class="form_field">
+          <%= f.label :email %>
+          <br/>
+          <%= f.text_field :email %>
+        </li>
+        <li class="form_field">
+          <%= f.label :password %>
+          <br/>
+          <%= f.password_field :password %>
+        </li>
+        <li class="register_button">
+          <%= f.submit "Register" %>
+        </li>
+      </ul>
+    <% end %>
+  </div>
 </div>
