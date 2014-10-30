@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       if @user && @user.authenticate(params[:password_digest])
         session[:user_id] = @user.id
         flash[:notice] = 'Your have logged in Sucessfully'
-        redirect_to root_path
+        redirect_to users_path
       else
         @user = User.new
         @user.errors[:base] = "Username/Password invalid!"

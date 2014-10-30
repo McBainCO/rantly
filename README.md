@@ -1,6 +1,6 @@
 # Rantly
 
-[Rantly on Heroku](http://secret-sea-2080.herokuapp.com/)
+[Rantly on Heroku](https://graham-rantly.herokuapp.com/)
 
 
 

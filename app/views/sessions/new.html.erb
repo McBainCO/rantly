@@ -1,5 +1,6 @@
 <div class="bottom_hero">
   <div class="login_form">
+    Login
     <%= form_tag "/sessions" do %>
       <ul style="list-style-type: none;">
         <li class="form_field">
@@ -12,6 +13,7 @@
           <br/>
           <%= password_field_tag :password_digest %>
         </li>
+        <br/>
         <li class="register_button">
           <%= submit_tag "Sign in" %>
         </li>
