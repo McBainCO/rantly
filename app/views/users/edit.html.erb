@@ -2,6 +2,32 @@
 
   <div class="login_form">
     Edit your information!
+
+    <%= form_for current_user do |f| %>
+      <ul style="list-style-type: none;">
+        <li class="form_field">
+          <%= f.label :name %>
+          <br/>
+          <%= f.text_field :name %>
+        </li>
+        <li class="form_field">
+          <%= f.label :email %>
+          <br/>
+          <%= f.text_field :email %>
+        </li>
+        <li class="form_field">
+          <%= f.label :password %>
+          <br/>
+          <%= f.password_field :password %>
+        </li>
+        <br/>
+        <li class="register_button">
+          <%= f.submit "Register" %>
+        </li>
+      </ul>
+      </div>
+    <% end %>
+    </div>
 </div>
 
 

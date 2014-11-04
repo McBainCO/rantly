@@ -1,4 +1,32 @@
 <div class="rant_panel">
   Rant Panel
-   <%= link_to "Graham", edit_user_path(:id) %>
+   <%= link_to current_user.name, edit_user_path(current_user) %>
+
+  <%= form_for @rants do |f| %>
+    <ul style="list-style-type: none;">
+      <li class="form_field">
+        <%= f.label :title %>
+        <br/>
+        <%= f.text_field :title %>
+      </li>
+      <li class="form_field">
+        <%= f.label :content %>
+        <br/>
+        <%= f.text_field :content %>
+      </li>
+      <br/>
+      <li class="register_button">
+        <%= f.submit "Rant" %>
+      </li>
+    </ul>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+
+
+ <div class="rant_stream">
+   
 </div>
